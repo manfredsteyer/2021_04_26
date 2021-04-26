@@ -1,0 +1,9 @@
+<div>
+    <div>
+        <span *ngFor="let tab of tabs">
+            <a (click)="activate(tab)">{{tab.title}}</a> &nbsp;|&nbsp;
+        </span>
+    </div>
+
+    <ng-content></ng-content>
+</div>
