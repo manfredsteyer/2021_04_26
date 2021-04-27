@@ -18,3 +18,22 @@
         <i>No canceled flights available!</i>
     </app-tab>
 </app-tabbed-pane>
+
+
+<app-data-table [data]="flights">
+    <div *appTableField="let data as 'id'">{{data}}</div>
+    <div *appTableField="let data as 'from'">{{data}}</div>
+    <div *appTableField="let data as 'to'">{{data}}</div>
+    <div *appTableField="let data as 'date'">{{data | date:'dd.MM.yyyy HH:mm'}}</div>
+</app-data-table>
+
+<button (appClickWithWarning)="deleteAll()" warning="Sure?">Delete All!</button>
+
+
+<button [appTipToolText]="myTipToolText">Very Important</button>
+
+<ng-template #myTipToolText>
+    <div>
+        This is a very important button!
+    </div>
+</ng-template>

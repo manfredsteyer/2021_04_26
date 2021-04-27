@@ -11,11 +11,10 @@ export class TabComponent implements OnInit {
   @Input() title = '';
   visible = true;
 
-  constructor(private pane: TabbedPaneComponent) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.pane.register(this);
   }
 
 }

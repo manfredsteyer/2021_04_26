@@ -12,6 +12,11 @@ import { FormsModule } from '@angular/forms';
 import { CityValidationDirective } from './validation/city-validation.directive';
 import { TabbedPaneComponent } from './tabs/tabbed-pane/tabbed-pane.component';
 import { TabComponent } from './tabs/tab/tab.component';
+import { PageComponent } from './tabs/page/page.component';
+import { ClickWithWarningDirective } from './click-with-warning.directive';
+import { TipToolTextDirective } from './tip-tool-text.directive';
+import { TableFieldDirective } from './controls/data-table/table-field.directive';
+import { DataTableComponent } from './controls/data-table/data-table.component';
 
 @NgModule({
   imports: [
@@ -29,7 +34,17 @@ import { TabComponent } from './tabs/tab/tab.component';
 
     TabbedPaneComponent,
 
-    TabComponent
+    TabComponent,
+
+    PageComponent,
+
+    ClickWithWarningDirective,
+
+    TipToolTextDirective,
+
+    TableFieldDirective,
+
+    DataTableComponent
   ],
   exports: [
     DateComponent,
@@ -44,7 +59,12 @@ import { TabComponent } from './tabs/tab/tab.component';
 
     TabbedPaneComponent,
 
-    TabComponent
+    TabComponent,
+    PageComponent,
+    ClickWithWarningDirective,
+    TipToolTextDirective,
+    TableFieldDirective,
+    DataTableComponent,
   ]
 })
 export class SharedModule { }

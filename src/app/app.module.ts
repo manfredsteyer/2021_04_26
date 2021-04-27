@@ -13,6 +13,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { SharedModule } from './shared/shared.module';
+import { DecimalPipe } from '@angular/common';
 
 @NgModule({
    imports: [
@@ -30,7 +31,9 @@ import { SharedModule } from './shared/shared.module';
       AboutComponent,
       NotFoundComponent,
    ],
-   providers: [],
+   providers: [
+      DecimalPipe
+   ],
    bootstrap: [
       AppComponent
    ]
